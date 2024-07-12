@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Freelancer",
+    company: "Free",
+    description:
+      "Creador de aplicativos web y de aplicativos de escritorio",
+  },
+  {
+    date: "Febrero 2024",
+    title: "Process and Project Engineer  ",
+    company: "Tigo,Millicon",
+    description:
+      "Proyect Manager de desarrollos internos del ábhna One Network Proyect Manager de control y procesos internos One Network  Habilidad en gestión para solucionar problemas  laborales (profesionales y humanos)  Gestión Objetiva de Conflictos. Management de proyectos con mitologías agiles  Pruebas en el Ambiente de QA y PROD, dentro del aplicativo interno  Reporteria en Tableau y Power BI.Manejo de ERP y Dercas Aplicativo interno en Angular para cotizaciones de clientes del área de telecomunicaciones Control de data por medio de SQL y Oracle ",
+  },
+  {
+    date: "Diciembre 2019",
+    title: "Desarrollador de Software, Full Stack  ",
+    company: "Diseño e Ingeniería Industrial ",
+    description:
+      "Encargado: Desarrollar aplicación para el uso propio de la empresa con base de datos. Aplicaciones Web desde el modelado y creación de Front-end y Backend. Herramientas que se utilizaron: Android Studio, ASP.NET en MVC ,MySql ,SQL,Oracle(Muy poco el uso por costo),PHP, SQL ,Java,Firebase ",
+  },
+  
+]
+---
+
+<ol class="relative mt-16" >
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
